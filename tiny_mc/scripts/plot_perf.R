@@ -29,8 +29,8 @@ limits <- aes(ymax = agData$mean + agData$se,
 p <- ggplot( data = agData, aes(x = factor(Compilador), y = mean, fill = factor(Optimizacion)) )
 p + geom_bar(stat = "identity", position = position_dodge(0.9)) +
     geom_errorbar(limits, position = position_dodge(0.9), width = 0.25) +
-    labs( x = "Compilador", y = "ms/iteracion") +
-    ggtitle("Metrica según compilador y optimización") +
+    labs( x = "Compilador", y = "iteraciones/ms") +
+    #ggtitle("Metrica según compilador y optimización") +
     scale_fill_discrete(name = "Optimización")
 
 
