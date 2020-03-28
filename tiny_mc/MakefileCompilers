@@ -3,7 +3,7 @@ BIN = tiny_mc_perf
 
 # Flags
 OPT = -O0
-CFLAGS = -Wall -Wextra -Werror $(OPT)
+CFLAGS = -Wall -Wextra -Werror $(OPT) -march=native
 LDFLAGS = -lm -fopenmp
 
 # Default Values
